@@ -3,7 +3,7 @@
 import sys
 
 if len(sys.argv) > 4 or len(sys.argv) != 4:
-    print("Introduce una operacion y un operando")
+    print("Introduce una operacion y dos operandos")
     sys.exit(1)
 
 operation = sys.argv[1]
