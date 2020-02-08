@@ -2,7 +2,7 @@
 
 import sys
 
-if len(sys.argv) > 4 or len(sys.argv) != 4:
+if len(sys.argv) != 4:
     print("Introduce una operacion y dos operandos")
     sys.exit(1)
 
@@ -11,10 +11,12 @@ operand1 =  int(sys.argv[2])
 operand2 =  int(sys.argv[3])
 
 if operation == "add":
-    print("El resultado es: "+ str(operand1 + operand2))
+    result = operand1 + operand2
 if operation == "sub":
-    print("El resultado es: "+ str(operand1 - operand2))
+    result = operand1 - operand2
 if operation == "mul":
-    print("El resultado es: "+ str(operand1 * operand2))
+    result = operand1 * operand2
 if operation == "div":
-    print("El resultado es: "+ str(operand1 / operand2))
+    result = operand1 / operand2
+
+print("El resultado es: "+ str(result))
