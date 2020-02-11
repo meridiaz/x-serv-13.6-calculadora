@@ -31,5 +31,6 @@ try:
 except ZeroDivisionError:
     print("Para realizar una division el divisor debe ser distinto de 0")
     sys.exit(1)
+    
 
 print("El resultado es: "+ str(result))
