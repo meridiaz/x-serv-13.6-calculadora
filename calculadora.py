@@ -8,10 +8,10 @@ if len(sys.argv) != 4:
 
 operation = sys.argv[1]
 try:
-    operand1 =  int(sys.argv[2])
-    operand2 =  int(sys.argv[3])
+    operand1 =  float(sys.argv[2])
+    operand2 =  float(sys.argv[3])
 except ValueError:
-    print("Introduce un operando valido")
+    print("Introduce un operando valido tipo decimal")
     sys.exit(1)
 
 if operation == "add":
